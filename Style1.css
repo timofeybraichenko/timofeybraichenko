@@ -1,0 +1,115 @@
+html {
+    height: auto;
+}
+
+body {
+    background: linear-gradient(to top, #e66465, #9198e5)no-repeat;
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.site button {
+  position: absolute;
+  font-size: 14px;
+  border-top: 600px;
+  border-left: calc(50% - 50px);
+  background-color: blue;
+  height: 50px;
+  width: 100px;
+  border: 1px solid green;
+  border-radius: 5px;
+  color: white;
+}
+.site {
+  /*position: absolute 1366px 306px;*/
+  position: relative;
+  height: calc(100vh - 40px);
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  /*margin-left: 6%;*/
+  padding-top: 16px;
+  display: block;
+  margin: 16px auto 0 auto;
+  line-height: normal;
+  left: 10%;
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  /*margin: 0 34px 0 30px;*/
+  /*font-size: 17px;*/
+  text-transform: uppercase;
+  /*display: inline-block;*/
+  transition: color .2s;
+}
+/*#parent{*/
+/*  font-family: #child;*/
+/*  position:relative; !* добавили *!*/
+/*	background :black;*/
+/*	height: 300px;*/
+/*  height: 100%;*/
+/*}*/
+#child{
+  position:absolute;
+	bottom:0; /* добавили */
+  left: 10%;
+}
+header {
+  background-color: red;
+  color: #2a6a17;
+  display: block;
+  font: normal 28.5pt 'Colonna MT';
+  height: 150px;
+  margin-top: 5px;
+  position: relative;
+  text-align: center;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.mеnu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #feb386;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px;
+  margin: 0 30px;
+}
+.p {
+  font-family: 'Raleway', sans-serif;
+}
